@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_time"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/timg"
+    tools:context="cn.itcast.courseclient.TimeActivity">
+    <TextView
+        android:text="计时评分模式"
+        android:textSize="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/txt_minute"
+        android:text="时间/总时间(分钟):    00/00"
+        android:textSize="20dp"
+        android:layout_marginTop = "100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:text="
+        1.在计时过程中，请将手机放在桌子上\n
+        2.在上课期间不要使用手机\n
+        3.请保管好自己的手机，避免丢失"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="14dp"
+        />
+    <ProgressBar
+        android:id="@+id/pro_minute"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="30dp"
+        />
+    <ProgressBar
+        android:id="@+id/pro_second"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="30dp"
+        />
+    <TextView
+        android:id="@+id/txt_score"
+        android:text="当前签到分数:            0000"
+        android:textSize="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/txt_minute"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+</RelativeLayout>

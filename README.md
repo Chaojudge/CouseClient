@@ -1,4 +1,4 @@
-# CouseClient
+# CourseClient
 
 计时锁屏Android客户端
 
